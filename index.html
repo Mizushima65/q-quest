@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>量子コンピューティングの未来 - QuantumLeap</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #e0f7fa, #4fc3f7, #0288d1);
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+        header {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        header .logo {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        header nav {
+            float: right;
+        }
+        header nav ul {
+            list-style: none;
+        }
+        header nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .hero {
+            background: url('/placeholder.svg?height=600&width=1200') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            display: inline-block;
+            background: #0288d1;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #01579b;
+        }
+        .features {
+            padding: 4rem 0;
+            background: rgba(255, 255, 255, 0.9);
+        }
+        .feature {
+            text-align: center;
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+        .feature img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 1rem;
+        }
+        .contact {
+            padding: 4rem 0;
+            background: rgba(255, 255, 255, 0.8);
+        }
+        .contact form {
+            display: grid;
+            gap: 1rem;
+            max-width: 500px;
+            margin: auto;
+        }
+        .contact form input,
+        .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        footer {
+            background: #01579b;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        @media (max-width: 768px) {
+            header nav {
+                float: none;
+                text-align: center;
+            }
+            header nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">QuantumLeap</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">ホーム</a></li>
+                    <li><a href="#features">特徴</a></li>
+                    <li><a href="#contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>量子コンピューティングの未来へ</h1>
+            <p>ビジネスを革新し、不可能を可能にする量子コンピューティングサービス</p>
+            <a href="#contact" class="btn">今すぐ始める</a>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>QuantumLeapの特徴</h2>
+            <div class="feature">
+                <img src="/placeholder.svg?height=100&width=100" alt="高速計算">
+                <h3>超高速計算</h3>
+                <p>従来のコンピューターでは数年かかる計算も、わずか数秒で解決します。</p>
+            </div>
+            <div class="feature">
+                <img src="/placeholder.svg?height=100&width=100" alt="最適化">
+                <h3>複雑な最適化</h3>
+                <p>物流、金融、創薬など、様々な分野での最適化問題を解決します。</p>
+            </div>
+            <div class="feature">
+                <img src="/placeholder.svg?height=100&width=100" alt="セキュリティ">
+                <h3>次世代セキュリティ</h3>
+                <p>量子暗号技術により、絶対に破られない通信を実現します。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>お問い合わせ</h2>
+            <form>
+                <input type="text" name="name" placeholder="お名前" required>
+                <input type="email" name="email" placeholder="メールアドレス" required>
+                <textarea name="message" placeholder="メッセージ" required></textarea>
+                <button type="submit" class="btn">送信</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 QuantumLeap. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
